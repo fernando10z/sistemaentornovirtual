@@ -460,70 +460,6 @@ $total_usuarios_asignados = array_sum(array_column($roles, 'total_usuarios'));
                     </div>
                 </div>
 
-                <!-- Estadísticas -->
-                <div class="row mb-4">
-                    <div class="col-md-3">
-                        <div class="card card-stats text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Total Roles</h6>
-                                        <h3 class="mb-0"><?= $total_roles ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-shield"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-success text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Roles Activos</h6>
-                                        <h3 class="mb-0"><?= $roles_activos ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-warning text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Roles Inactivos</h6>
-                                        <h3 class="mb-0"><?= $roles_inactivos ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-x"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-info text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Usuarios Asignados</h6>
-                                        <h3 class="mb-0"><?= $total_usuarios_asignados ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-users"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Filtros -->
                 <div class="card mb-4">
                     <div class="card-body">
@@ -715,6 +651,7 @@ $total_usuarios_asignados = array_sum(array_column($roles, 'total_usuarios'));
     <script src="../assets/js/sidebarmenu.js"></script>
     <script src="../assets/js/app.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

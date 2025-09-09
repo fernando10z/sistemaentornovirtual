@@ -436,71 +436,6 @@ $ocupacion_promedio = $capacidad_total > 0 ? round(($estudiantes_total / $capaci
                     </div>
                 </div>
 
-                <!-- Estadísticas -->
-                <div class="row mb-4">
-                    <div class="col-md-3">
-                        <div class="card card-stats text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Total Aulas</h6>
-                                        <h3 class="mb-0"><?= $total_aulas ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-building"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-success text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Aulas Ocupadas</h6>
-                                        <h3 class="mb-0"><?= $aulas_ocupadas ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-warning text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Capacidad Total</h6>
-                                        <h3 class="mb-0"><?= $capacidad_total ?></h3>
-                                        <small>estudiantes</small>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-users"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-info text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Ocupación Promedio</h6>
-                                        <h3 class="mb-0"><?= $ocupacion_promedio ?>%</h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-chart-pie"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Filtros -->
                 <div class="card mb-4">
                     <div class="card-body">
@@ -718,6 +653,7 @@ $ocupacion_promedio = $capacidad_total > 0 ? round(($estudiantes_total / $capaci
     <script src="../assets/js/sidebarmenu.js"></script>
     <script src="../assets/js/app.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -730,7 +666,7 @@ $ocupacion_promedio = $capacidad_total > 0 ? round(($estudiantes_total / $capaci
                 language: {
                     url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/es-ES.json'
                 },
-                pageLength: 15,
+                pageLength: 5,
                 order: [[0, 'asc']],
                 columnDefs: [
                     { orderable: false, targets: [6] }

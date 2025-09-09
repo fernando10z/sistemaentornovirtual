@@ -65,170 +65,170 @@
     }
 
     /* CSS para left-sidebar - Eliminación de huecos y optimización */
-.left-sidebar {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  height: 100vh !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden;
-  z-index: 1000;
-  background-color: #fff;
-  border-right: 1px solid #e9ecef;
-  box-shadow: 0 0 20px rgba(0,0,0,0.08);
-}
+      .left-sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+        z-index: 1000;
+        background-color: #fff;
+        border-right: 1px solid #e9ecef;
+        box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      }
 
-/* Contenedor interno del sidebar */
-.left-sidebar > div {
-  height: 100vh !important;
-  display: flex;
-  flex-direction: column;
-  margin: 0 !important;
-  padding: 0 !important;
-}
+      /* Contenedor interno del sidebar */
+      .left-sidebar > div {
+        height: 100vh !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
 
-/* Brand logo area */
-.left-sidebar .brand-logo {
-  flex-shrink: 0;
-  padding: 20px 24px;
-  margin: 0 !important;
-  border-bottom: 1px solid #e9ecef;
-}
+      /* Brand logo area */
+      .left-sidebar .brand-logo {
+        flex-shrink: 0;
+        padding: 20px 24px;
+        margin: 0 !important;
+        border-bottom: 1px solid #e9ecef;
+      }
 
-/* Navegación del sidebar */
-.left-sidebar .sidebar-nav {
-  flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin: 0 !important;
-  padding: 0 !important;
-}
+      /* Navegación del sidebar */
+      .left-sidebar .sidebar-nav {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
 
-/* Lista de navegación */
-.left-sidebar #sidebarnav {
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style: none;
-}
+      /* Lista de navegación */
+      .left-sidebar #sidebarnav {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none;
+      }
 
-/* Items del sidebar */
-.left-sidebar .sidebar-item {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+      /* Items del sidebar */
+      .left-sidebar .sidebar-item {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
 
-/* Links del sidebar */
-.left-sidebar .sidebar-link {
-  display: flex;
-  align-items: center;
-  padding: 12px 24px !important;
-  margin: 0 !important;
-  text-decoration: none;
-  color: #495057;
-  border: none !important;
-  background: transparent !important;
-  transition: all 0.15s ease;
-}
+      /* Links del sidebar */
+      .left-sidebar .sidebar-link {
+        display: flex;
+        align-items: center;
+        padding: 12px 24px !important;
+        margin: 0 !important;
+        text-decoration: none;
+        color: #495057;
+        border: none !important;
+        background: transparent !important;
+        transition: all 0.15s ease;
+      }
 
-/* Hover effects */
-.left-sidebar .sidebar-link:hover {
-  background-color: #f8f9fa !important;
-  color: #0d6efd !important;
-}
+      /* Hover effects */
+      .left-sidebar .sidebar-link:hover {
+        background-color: #f8f9fa !important;
+        color: #0d6efd !important;
+      }
 
-/* Active link */
-.left-sidebar .sidebar-link.active {
-  background-color: #e7f1ff !important;
-  color: #0d6efd !important;
-  font-weight: 500;
-}
+      /* Active link */
+      .left-sidebar .sidebar-link.active {
+        background-color: #e7f1ff !important;
+        color: #0d6efd !important;
+        font-weight: 500;
+      }
 
-/* Categorías pequeñas */
-.left-sidebar .nav-small-cap {
-  padding: 20px 24px 8px 24px !important;
-  margin: 0 !important;
-  color: #6c757d;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+      /* Categorías pequeñas */
+      .left-sidebar .nav-small-cap {
+        padding: 20px 24px 8px 24px !important;
+        margin: 0 !important;
+        color: #6c757d;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
 
-/* Dividers */
-.left-sidebar .sidebar-divider {
-  margin: 16px 24px !important;
-  height: 1px;
-  background-color: #e9ecef;
-  border: none;
-}
+      /* Dividers */
+      .left-sidebar .sidebar-divider {
+        margin: 16px 24px !important;
+        height: 1px;
+        background-color: #e9ecef;
+        border: none;
+      }
 
-/* Badges Pro */
-.left-sidebar .badge {
-  font-size: 0.625rem !important;
-  padding: 4px 8px !important;
-}
+      /* Badges Pro */
+      .left-sidebar .badge {
+        font-size: 0.625rem !important;
+        padding: 4px 8px !important;
+      }
 
-/* Submenús colapsables */
-.left-sidebar .collapse {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+      /* Submenús colapsables */
+      .left-sidebar .collapse {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
 
-/* Items de submenú */
-.left-sidebar .first-level .sidebar-item .sidebar-link {
-  padding-left: 48px !important;
-  font-size: 0.875rem;
-}
+      /* Items de submenú */
+      .left-sidebar .first-level .sidebar-item .sidebar-link {
+        padding-left: 48px !important;
+        font-size: 0.875rem;
+      }
 
-/* Scrollbar personalizado */
-.left-sidebar .sidebar-nav::-webkit-scrollbar {
-  width: 4px;
-}
+      /* Scrollbar personalizado */
+      .left-sidebar .sidebar-nav::-webkit-scrollbar {
+        width: 4px;
+      }
 
-.left-sidebar .sidebar-nav::-webkit-scrollbar-track {
-  background: transparent;
-}
+      .left-sidebar .sidebar-nav::-webkit-scrollbar-track {
+        background: transparent;
+      }
 
-.left-sidebar .sidebar-nav::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.1);
-  border-radius: 2px;
-}
+      .left-sidebar .sidebar-nav::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 2px;
+      }
 
-.left-sidebar .sidebar-nav::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0,0,0,0.2);
-}
+      .left-sidebar .sidebar-nav::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0,0,0,0.2);
+      }
 
-/* Firefox scrollbar */
-.left-sidebar .sidebar-nav {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.1) transparent;
-}
+      /* Firefox scrollbar */
+      .left-sidebar .sidebar-nav {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0,0,0,0.1) transparent;
+      }
 
-/* Responsive - Mobile */
-@media (max-width: 1199.98px) {
-  .left-sidebar {
-    margin-left: -270px;
-    transition: margin-left 0.25s ease;
-  }
-  
-  .left-sidebar.show {
-    margin-left: 0;
-  }
-}
+      /* Responsive - Mobile */
+      @media (max-width: 1199.98px) {
+        .left-sidebar {
+          margin-left: -270px;
+          transition: margin-left 0.25s ease;
+        }
+        
+        .left-sidebar.show {
+          margin-left: 0;
+        }
+      }
 
-/* Mini sidebar state */
-.mini-sidebar .left-sidebar {
-  width: 80px !important;
-}
+      /* Mini sidebar state */
+      .mini-sidebar .left-sidebar {
+        width: 80px !important;
+      }
 
-.mini-sidebar .left-sidebar .hide-menu {
-  display: none !important;
-}
+      .mini-sidebar .left-sidebar .hide-menu {
+        display: none !important;
+      }
 
-.mini-sidebar .left-sidebar .brand-logo img {
-  width: 40px !important;
-}
+      .mini-sidebar .left-sidebar .brand-logo img {
+        width: 40px !important;
+      }
     
     /* Optimización de animaciones */
     @media (prefers-reduced-motion: reduce) {

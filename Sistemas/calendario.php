@@ -509,71 +509,6 @@ if ($periodo_actual) {
                 </div>
                 <?php endif; ?>
 
-                <!-- Estadísticas -->
-                <div class="row mb-4">
-                    <div class="col-md-3">
-                        <div class="card card-stats text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Total Eventos</h6>
-                                        <h3 class="mb-0"><?= $total_eventos ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-calendar-event"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-success text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Próximos 7 Días</h6>
-                                        <h3 class="mb-0"><?= $eventos_proximos ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-clock"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-warning text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Feriados Este Mes</h6>
-                                        <h3 class="mb-0"><?= $feriados_mes ?></h3>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-beach"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-info text-white">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-white-50 mb-1">Días Restantes</h6>
-                                        <h3 class="mb-0"><?= $dias_restantes ?></h3>
-                                        <small>en período actual</small>
-                                    </div>
-                                    <div class="stats-icon">
-                                        <i class="ti ti-hourglass"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Filtros -->
                 <div class="card mb-4">
                     <div class="card-body">
@@ -845,6 +780,7 @@ if ($periodo_actual) {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales/es.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
     <script>
         let tablaEventos;
