@@ -14,8 +14,6 @@
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
           <ul id="sidebarnav">
             <!-- ESTRUCTURA COMPLETA DEL SIDEBAR - SISTEMA EVA -->
-<!-- COLEGIO ANDRÉS AVELINO CÁCERES - ORDEN CORRECTO -->
-
             <!-- DASHBOARD -->
             <li class="nav-small-cap">
               <iconify-icon icon="solar:widget-3-line-duotone" class="nav-small-cap-icon fs-4"></iconify-icon>
@@ -51,7 +49,7 @@
               </a>
               <ul aria-expanded="false" class="collapse first-level">
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/catalogos/periodos.php">
+                  <a class="sidebar-link primary-hover-bg" href="periodos.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Períodos Académicos</span>
@@ -59,7 +57,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/catalogos/niveles.php">
+                  <a class="sidebar-link primary-hover-bg" href="niveles.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Niveles y Grados</span>
@@ -67,7 +65,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/catalogos/areas.php">
+                  <a class="sidebar-link primary-hover-bg" href="areas.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Áreas Curriculares</span>
@@ -75,7 +73,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/catalogos/secciones.php">
+                  <a class="sidebar-link primary-hover-bg" href="secciones.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Secciones</span>
@@ -83,7 +81,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/catalogos/malla.php">
+                  <a class="sidebar-link primary-hover-bg" href="malla.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Malla Curricular</span>
@@ -104,7 +102,7 @@
               </a>
               <ul aria-expanded="false" class="collapse first-level">
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/matricula/index.php">
+                  <a class="sidebar-link primary-hover-bg" href="matricula.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Gestión Matrículas</span>
@@ -112,18 +110,10 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/matricula/traslados.php">
+                  <a class="sidebar-link primary-hover-bg" href="traslados.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Traslados</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/matricula/reportes.php">
-                    <div class="d-flex align-items-center gap-6">
-                      <span class="d-flex"><span class="icon-small"></span></span>
-                      <span class="hide-menu">Reportes Matrícula</span>
                     </div>
                   </a>
                 </li>
@@ -141,7 +131,7 @@
               </a>
               <ul aria-expanded="false" class="collapse first-level">
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/docentes/index.php">
+                  <a class="sidebar-link primary-hover-bg" href="docente.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Gestión Docentes</span>
@@ -149,7 +139,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/docentes/asignaciones.php">
+                  <a class="sidebar-link primary-hover-bg" href="asignaciones.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Asignaciones</span>
@@ -157,7 +147,7 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link primary-hover-bg" href="academico/docentes/horarios.php">
+                  <a class="sidebar-link primary-hover-bg" href="horarios.php">
                     <div class="d-flex align-items-center gap-6">
                       <span class="d-flex"><span class="icon-small"></span></span>
                       <span class="hide-menu">Horarios</span>
