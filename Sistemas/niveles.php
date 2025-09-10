@@ -456,10 +456,6 @@
                                     <i class="ti ti-arrows-sort me-2"></i>
                                     Reorganizar
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary" onclick="validarEdades()">
-                                    <i class="ti ti-search me-2"></i>
-                                    Validar Edades
-                                </button>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarNivel">
                                     <i class="ti ti-plus me-2"></i>
                                     Nuevo Nivel
@@ -614,11 +610,6 @@
                                                             title="Editar Nivel">
                                                         <i class="ti ti-edit"></i>
                                                     </button>
-                                                    <button type="button" class="btn btn-sm btn-outline-info" 
-                                                            onclick="gestionarGrados(<?= $nivel['id'] ?>)" 
-                                                            title="Gestionar Grados">
-                                                        <i class="ti ti-list"></i>
-                                                    </button>
                                                     <button type="button" class="btn btn-sm <?= $nivel['activo'] ? 'btn-outline-warning' : 'btn-outline-success' ?>" 
                                                             onclick="toggleEstadoNivel(<?= $nivel['id'] ?>, <?= $nivel['activo'] ? 'false' : 'true' ?>)" 
                                                             title="<?= $nivel['activo'] ? 'Desactivar' : 'Activar' ?> Nivel">
@@ -684,7 +675,6 @@
     <!-- Incluir Modales -->
     <?php include 'modales/niveles/modal_agregar.php'; ?>
     <?php include 'modales/niveles/modal_editar.php'; ?>
-    <?php include 'modales/niveles/modal_grados.php'; ?>
 
     <!-- Scripts -->
     <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
@@ -861,31 +851,6 @@
             });
         }
 
-        function gestionarGrados(id) {
-            mostrarCarga();
-            
-            fetch('modales/niveles/procesar_niveles.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: `accion=obtener_grados&id=${id}`
-            })
-            .then(response => response.json())
-            .then(data => {
-                ocultarCarga();
-                
-                if (data.success) {
-                    cargarGestionGrados(data.nivel);
-                    $('#modalGestionGrados').modal('show');
-                } else {
-                    mostrarError(data.message);
-                }
-            })
-            .catch(error => {
-                ocultarCarga();
-                mostrarError('Error al cargar grados');
-            });
-        }
-
         function toggleEstadoNivel(id, nuevoEstado) {
             const accion = nuevoEstado === 'true' ? 'activar' : 'desactivar';
             const mensaje = `¿Deseas ${accion} este nivel educativo?`;
@@ -1027,34 +992,6 @@
             .catch(error => {
                 ocultarCarga();
                 mostrarError('Error al actualizar orden');
-            });
-        }
-
-        function validarEdades() {
-            ejecutarValidaciones();
-        }
-
-        function ejecutarValidaciones() {
-            mostrarCarga();
-            
-            fetch('modales/niveles/procesar_niveles.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: 'accion=validar_edades'
-            })
-            .then(response => response.json())
-            .then(data => {
-                ocultarCarga();
-                
-                if (data.success) {
-                    mostrarValidaciones(data.validaciones);
-                } else {
-                    mostrarError(data.message);
-                }
-            })
-            .catch(error => {
-                ocultarCarga();
-                mostrarError('Error al ejecutar validaciones');
             });
         }
 

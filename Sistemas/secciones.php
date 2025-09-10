@@ -715,7 +715,6 @@
     <!-- Incluir Modales -->
     <?php include 'modales/secciones/modal_agregar.php'; ?>
     <?php include 'modales/secciones/modal_editar.php'; ?>
-    <?php include 'modales/secciones/modal_detalle.php'; ?>
 
     <!-- Scripts -->
     <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
