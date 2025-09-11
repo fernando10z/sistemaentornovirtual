@@ -655,11 +655,6 @@
                                                             title="Gestionar Competencias">
                                                         <i class="ti ti-target"></i>
                                                     </button>
-                                                    <button type="button" class="btn btn-sm btn-outline-success" 
-                                                            onclick="duplicarAsignacion(<?= $item['id'] ?>)" 
-                                                            title="Duplicar a otros grados">
-                                                        <i class="ti ti-copy"></i>
-                                                    </button>
                                                     <button type="button" class="btn btn-sm btn-outline-danger" 
                                                             onclick="eliminarAsignacion(<?= $item['id'] ?>)" 
                                                             title="Eliminar Asignación">
@@ -720,6 +715,9 @@
             <span class="visually-hidden">Cargando...</span>
         </div>
     </div>
+    
+
+
 
     <!-- Incluir Modales -->
     <?php include 'modales/malla/modal_asignar.php'; ?>
@@ -735,7 +733,8 @@
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+        <script src="assets/js/sistema-auxiliares.js"></script>                              
+    
     <script>
         let tablaMalla;
 

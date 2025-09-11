@@ -730,10 +730,10 @@ foreach ($carga_por_docente as $docente_id => $info) {
                                                         <small class="text-muted">Sin horarios definidos</small>
                                                     <?php endif; ?>
                                                 </div>
-                                                <button type="button" class="btn btn-sm btn-outline-info mt-1" 
+                                                <!-- <button type="button" class="btn btn-sm btn-outline-info mt-1" 
                                                         onclick="verHorarioCompleto(<?= $asignacion['id'] ?>)">
                                                     <i class="ti ti-calendar-time"></i> Ver completo
-                                                </button>
+                                                </button> -->
                                             </td>
                                             <td class="table-actions">
                                                 <div class="d-flex gap-1 flex-wrap">
